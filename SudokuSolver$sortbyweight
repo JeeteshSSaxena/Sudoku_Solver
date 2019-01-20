@@ -1,0 +1,54 @@
+// Compiled from SudokuSolver.java (version 1.8 : 52.0, super bit)
+// Signature: Ljava/lang/Object;Ljava/util/Comparator<Ljava/awt/Point;>;
+class SudokuSolver$sortbyweight implements java.util.Comparator {
+  
+  // Field descriptor #8 LSudokuSolver;
+  final synthetic SudokuSolver this$0;
+  
+  // Method descriptor #10 (LSudokuSolver;)V
+  // Stack: 2, Locals: 2
+  SudokuSolver$sortbyweight(SudokuSolver arg0);
+     0  aload_0 [this]
+     1  aload_1 [arg0]
+     2  putfield SudokuSolver$sortbyweight.this$0 : SudokuSolver [12]
+     5  aload_0 [this]
+     6  invokespecial java.lang.Object() [14]
+     9  return
+      Line numbers:
+        [pc: 0, line: 121]
+      Local variable table:
+        [pc: 0, pc: 10] local: this index: 0 type: SudokuSolver.sortbyweight
+  
+  // Method descriptor #22 (Ljava/awt/Point;Ljava/awt/Point;)I
+  // Stack: 2, Locals: 3
+  public int compare(java.awt.Point arg0, java.awt.Point arg1);
+     0  aload_1 [arg0]
+     1  getfield java.awt.Point.y : int [23]
+     4  aload_2 [arg1]
+     5  getfield java.awt.Point.y : int [23]
+     8  isub
+     9  ireturn
+      Line numbers:
+        [pc: 0, line: 127]
+      Local variable table:
+        [pc: 0, pc: 10] local: this index: 0 type: SudokuSolver.sortbyweight
+        [pc: 0, pc: 10] local: arg0 index: 1 type: java.awt.Point
+        [pc: 0, pc: 10] local: arg1 index: 2 type: java.awt.Point
+  
+  // Method descriptor #32 (Ljava/lang/Object;Ljava/lang/Object;)I
+  // Stack: 3, Locals: 3
+  public bridge synthetic int compare(java.lang.Object arg0, java.lang.Object arg1);
+     0  aload_0 [this]
+     1  aload_1 [arg0]
+     2  checkcast java.awt.Point [24]
+     5  aload_2 [arg1]
+     6  checkcast java.awt.Point [24]
+     9  invokevirtual SudokuSolver$sortbyweight.compare(java.awt.Point, java.awt.Point) : int [33]
+    12  ireturn
+      Line numbers:
+        [pc: 0, line: 1]
+
+  Inner classes:
+    [inner class info: #1 SudokuSolver$sortbyweight, outer class info: #40 SudokuSolver
+     inner name: #42 sortbyweight, accessflags: 0 default]
+}
