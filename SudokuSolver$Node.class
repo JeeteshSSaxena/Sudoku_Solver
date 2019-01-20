@@ -1,0 +1,52 @@
+// Compiled from SudokuSolver.java (version 1.8 : 52.0, super bit)
+public class SudokuSolver$Node {
+  
+  // Field descriptor #6 J
+  long x;
+  
+  // Field descriptor #6 J
+  long color;
+  
+  // Field descriptor #6 J
+  long y;
+  
+  // Field descriptor #10 LSudokuSolver$Node;
+  SudokuSolver$Node par;
+  
+  // Field descriptor #12 Ljava/util/ArrayList;
+  // Signature: Ljava/util/ArrayList<Ljava/awt/Point;>;
+  java.util.ArrayList pp;
+  
+  // Field descriptor #16 LSudokuSolver;
+  final synthetic SudokuSolver this$0;
+  
+  // Method descriptor #18 (LSudokuSolver;J)V
+  // Stack: 3, Locals: 4
+  public SudokuSolver$Node(SudokuSolver arg0, long a);
+     0  aload_0 [this]
+     1  aload_1 [arg0]
+     2  putfield SudokuSolver$Node.this$0 : SudokuSolver [20]
+     5  aload_0 [this]
+     6  invokespecial java.lang.Object() [22]
+     9  aload_0 [this]
+    10  new java.util.ArrayList [25]
+    13  dup
+    14  invokespecial java.util.ArrayList() [27]
+    17  putfield SudokuSolver$Node.pp : java.util.ArrayList [28]
+    20  aload_0 [this]
+    21  lload_2 [a]
+    22  putfield SudokuSolver$Node.x : long [30]
+    25  return
+      Line numbers:
+        [pc: 0, line: 116]
+        [pc: 9, line: 115]
+        [pc: 20, line: 117]
+        [pc: 25, line: 119]
+      Local variable table:
+        [pc: 0, pc: 26] local: this index: 0 type: SudokuSolver.Node
+        [pc: 0, pc: 26] local: a index: 2 type: long
+
+  Inner classes:
+    [inner class info: #1 SudokuSolver$Node, outer class info: #39 SudokuSolver
+     inner name: #41 Node, accessflags: 1 public]
+}
