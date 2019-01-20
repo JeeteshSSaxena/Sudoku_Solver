@@ -1,0 +1,150 @@
+// Compiled from SudokuSolver.java (version 1.8 : 52.0, super bit)
+static class SudokuSolver$FastReader {
+  
+  // Field descriptor #6 Ljava/io/BufferedReader;
+  java.io.BufferedReader br;
+  
+  // Field descriptor #8 Ljava/util/StringTokenizer;
+  java.util.StringTokenizer st;
+  
+  // Method descriptor #10 ()V
+  // Stack: 6, Locals: 1
+  public SudokuSolver$FastReader();
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [12]
+     4  aload_0 [this]
+     5  new java.io.BufferedReader [14]
+     8  dup
+     9  new java.io.InputStreamReader [16]
+    12  dup
+    13  getstatic java.lang.System.in : java.io.InputStream [18]
+    16  invokespecial java.io.InputStreamReader(java.io.InputStream) [24]
+    19  invokespecial java.io.BufferedReader(java.io.Reader) [27]
+    22  putfield SudokuSolver$FastReader.br : java.io.BufferedReader [30]
+    25  return
+      Line numbers:
+        [pc: 0, line: 136]
+        [pc: 4, line: 138]
+        [pc: 9, line: 139]
+        [pc: 16, line: 138]
+        [pc: 25, line: 140]
+      Local variable table:
+        [pc: 0, pc: 26] local: this index: 0 type: SudokuSolver.FastReader
+  
+  // Method descriptor #37 ()Ljava/lang/String;
+  // Stack: 4, Locals: 2
+  java.lang.String next();
+     0  goto 29
+     3  aload_0 [this]
+     4  new java.util.StringTokenizer [38]
+     7  dup
+     8  aload_0 [this]
+     9  getfield SudokuSolver$FastReader.br : java.io.BufferedReader [30]
+    12  invokevirtual java.io.BufferedReader.readLine() : java.lang.String [40]
+    15  invokespecial java.util.StringTokenizer(java.lang.String) [43]
+    18  putfield SudokuSolver$FastReader.st : java.util.StringTokenizer [46]
+    21  goto 29
+    24  astore_1 [e]
+    25  aload_1 [e]
+    26  invokevirtual java.io.IOException.printStackTrace() : void [48]
+    29  aload_0 [this]
+    30  getfield SudokuSolver$FastReader.st : java.util.StringTokenizer [46]
+    33  ifnull 3
+    36  aload_0 [this]
+    37  getfield SudokuSolver$FastReader.st : java.util.StringTokenizer [46]
+    40  invokevirtual java.util.StringTokenizer.hasMoreElements() : boolean [53]
+    43  ifeq 3
+    46  aload_0 [this]
+    47  getfield SudokuSolver$FastReader.st : java.util.StringTokenizer [46]
+    50  invokevirtual java.util.StringTokenizer.nextToken() : java.lang.String [57]
+    53  areturn
+      Exception Table:
+        [pc: 3, pc: 21] -> 24 when : java.io.IOException
+      Line numbers:
+        [pc: 0, line: 144]
+        [pc: 3, line: 148]
+        [pc: 21, line: 149]
+        [pc: 24, line: 150]
+        [pc: 25, line: 152]
+        [pc: 29, line: 144]
+        [pc: 46, line: 155]
+      Local variable table:
+        [pc: 0, pc: 54] local: this index: 0 type: SudokuSolver.FastReader
+        [pc: 25, pc: 29] local: e index: 1 type: java.io.IOException
+      Stack map table: number of frames 3
+        [pc: 3, same]
+        [pc: 24, same_locals_1_stack_item, stack: {java.io.IOException}]
+        [pc: 29, same]
+  
+  // Method descriptor #64 ()I
+  // Stack: 1, Locals: 1
+  int nextInt();
+    0  aload_0 [this]
+    1  invokevirtual SudokuSolver$FastReader.next() : java.lang.String [65]
+    4  invokestatic java.lang.Integer.parseInt(java.lang.String) : int [67]
+    7  ireturn
+      Line numbers:
+        [pc: 0, line: 160]
+      Local variable table:
+        [pc: 0, pc: 8] local: this index: 0 type: SudokuSolver.FastReader
+  
+  // Method descriptor #74 ()J
+  // Stack: 2, Locals: 1
+  long nextLong();
+    0  aload_0 [this]
+    1  invokevirtual SudokuSolver$FastReader.next() : java.lang.String [65]
+    4  invokestatic java.lang.Long.parseLong(java.lang.String) : long [75]
+    7  lreturn
+      Line numbers:
+        [pc: 0, line: 165]
+      Local variable table:
+        [pc: 0, pc: 8] local: this index: 0 type: SudokuSolver.FastReader
+  
+  // Method descriptor #82 ()D
+  // Stack: 2, Locals: 1
+  double nextDouble();
+    0  aload_0 [this]
+    1  invokevirtual SudokuSolver$FastReader.next() : java.lang.String [65]
+    4  invokestatic java.lang.Double.parseDouble(java.lang.String) : double [83]
+    7  dreturn
+      Line numbers:
+        [pc: 0, line: 170]
+      Local variable table:
+        [pc: 0, pc: 8] local: this index: 0 type: SudokuSolver.FastReader
+  
+  // Method descriptor #37 ()Ljava/lang/String;
+  // Stack: 1, Locals: 3
+  java.lang.String nextLine();
+     0  ldc <String ""> [90]
+     2  astore_1 [str]
+     3  aload_0 [this]
+     4  getfield SudokuSolver$FastReader.br : java.io.BufferedReader [30]
+     7  invokevirtual java.io.BufferedReader.readLine() : java.lang.String [40]
+    10  astore_1 [str]
+    11  goto 19
+    14  astore_2 [e]
+    15  aload_2 [e]
+    16  invokevirtual java.io.IOException.printStackTrace() : void [48]
+    19  aload_1 [str]
+    20  areturn
+      Exception Table:
+        [pc: 3, pc: 11] -> 14 when : java.io.IOException
+      Line numbers:
+        [pc: 0, line: 175]
+        [pc: 3, line: 178]
+        [pc: 11, line: 179]
+        [pc: 14, line: 180]
+        [pc: 15, line: 182]
+        [pc: 19, line: 184]
+      Local variable table:
+        [pc: 0, pc: 21] local: this index: 0 type: SudokuSolver.FastReader
+        [pc: 3, pc: 21] local: str index: 1 type: java.lang.String
+        [pc: 15, pc: 19] local: e index: 2 type: java.io.IOException
+      Stack map table: number of frames 2
+        [pc: 14, full, stack: {java.io.IOException}, locals: {SudokuSolver$FastReader, java.lang.String}]
+        [pc: 19, same]
+
+  Inner classes:
+    [inner class info: #1 SudokuSolver$FastReader, outer class info: #99 SudokuSolver
+     inner name: #101 FastReader, accessflags: 8 static]
+}
